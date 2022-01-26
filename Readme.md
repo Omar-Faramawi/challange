@@ -26,20 +26,4 @@ GET http://localhost:3000/job/{jobId}
 
 ![alt text](https://raw.githubusercontent.com/Omar-Faramawi/challange/master/flowcharts.png)
 
-## Sections
-
-1- endpoints and controllers
-
-2- Enums
-
-3- Exceptions
-
-4- ORM
-
-5- ROUTES
-
-6- Services
-
-7- Utilities
-
 ## Timereport
