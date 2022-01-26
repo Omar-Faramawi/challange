@@ -1,10 +1,9 @@
 import * as fs from "fs";
-import { JobStatus } from "../../enums/job-status.enum";
 
 export abstract class BaseModel {
   constructor(public id: string) {}
 
-  static locateFile(id: string): boolean {
+  static exists(id: string): boolean {
     try {
       if (fs.existsSync("store/" + id + ".json")) {
         return true;
@@ -28,13 +27,7 @@ export abstract class BaseModel {
     return;
   }
 
-  static fetch(id: string): {
-    id: string;
-    status: JobStatus;
-    created_at: Date;
-    result: object;
-    processed_at: Date;
-  } {
+  static fetch(id: string) {
     try {
       return JSON.parse(fs.readFileSync("store/" + id + ".json", "utf8"));
     } catch (error) {

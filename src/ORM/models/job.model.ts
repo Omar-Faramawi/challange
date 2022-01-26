@@ -15,4 +15,10 @@ export class Job extends BaseModel {
   save() {
     super.store({ ...this });
   }
+
+  static find(jobId: string): Job {
+    const { id, status, created_at, result, processed_at } = Job.fetch(jobId);
+
+    return new Job(id, status, created_at, result, processed_at);
+  }
 }

@@ -6,32 +6,30 @@ import * as Unsplash from "../Servies/unsplash.service";
 
 export const getJob: RequestHandler<{ id: string }> = (req, res, next) => {
   const paramId = req.params.id;
-  // Locate Job File
-  const exists = Job.locateFile(paramId);
   // File Exists
-  if (exists) {
-    // destruct the json object
-    const { id, status, created_at, result, processed_at } = Job.fetch(paramId);
+  if (Job.exists(paramId)) {
+    // Load the Job
+    const job = Job.find(paramId);
 
-    if (status === JobStatus.PROCESSED) {
+    if (job.status === JobStatus.PROCESSED) {
       // Status is Processed
-      // Return Response with Job Object
+      // Return Response with Job data
       res.status(201).json({
         data: {
-          jobId: id,
-          status: status,
-          created_at,
-          result: result,
-          processed_at: processed_at,
+          jobId: job.id,
+          status: job.status,
+          created_at: job.created_at,
+          result: job.result,
+          processed_at: job.processed_at,
         },
       });
-    } else if (status === JobStatus.PENDING) {
+    } else if (job.status === JobStatus.PENDING) {
       // Status is Pending
       // Return response with Job Status
       res.status(201).json({
         data: {
-          jobId: id,
-          status: status,
+          jobId: job.id,
+          status: job.status,
         },
       });
     }
