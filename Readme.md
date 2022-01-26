@@ -10,14 +10,33 @@ $ tsc
 $ npm start
 ```
 
-App will be running in http://localhost:3000
+App will be running on http://localhost:3000
 
-Use your favorite API testing application (Insomnia, Postman,..etc) to test the following endpoints
+# Usage
+
+Use your prefered API testing application (Insomnia, Postman,..etc) to test the following endpoints:
+
+### Create Job:
 
 ```
 POST http://localhost:3000/jops
+```
 
+### Fetch Job:
+
+```
 GET http://localhost:3000/job/{jobId}
+```
+
+### Failed Job:
+
+In order to test Job failuer case open the (Services\unsplash.service.ts) file and replace the access key with any random string
+
+```js
+const api = createApi({
+  accessKey: "PLACE_ANY_RANDOM_STRING_FOR_FAILURE",
+  fetch: nodeFetch,
+});
 ```
 
 # Solution
