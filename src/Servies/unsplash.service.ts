@@ -3,7 +3,7 @@ import nodeFetch from "cross-fetch";
 import { UnsplashException } from "../Exceptions/UnsplashException";
 
 // key written explicitly in this file for the sake of the challenge only so you don't need to create a new one
-// in real case, keys should be added in .env file and with by using dotenv npm package we can load it for development purposes
+// in real case, keys should be added in .env file and by using dotenv npm package we can load it for development purposes
 // and preload it for production
 const api = createApi({
   accessKey: "qRaOOxNwNsHZLgiI9IAa5AwHb5Y3sLz8hJ6GQIRSR_4",
