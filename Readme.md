@@ -1,13 +1,33 @@
+# Requirements
+
+Install the latest version of typescipt 4.5
+
+```
+npm install -g typescript
+```
+
 # Installation
 
 Open your prefered command line tool and run the following commands:
 
+1- Clone this repository to your local machine:
+
 ```bash
 $ git clone https://github.com/Omar-Faramawi/challange.git
 $ cd challenge
+```
+
+2- Install dependencies:
+
+```bash
 $ npm install
-$ tsc
-$ npm start
+```
+
+3- Build and serve:
+
+```bash
+$ npm run build
+$ npm run start
 ```
 
 App will be running on http://localhost:3000
