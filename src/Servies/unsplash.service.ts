@@ -16,7 +16,7 @@ const getFoodCollectionId = async () => {
 };
 
 export const getRandomFoodImage = async () => {
-  let catId = await getFoodCollectionId();
+  const catId = await getFoodCollectionId();
 
   let foodImage: Object;
 
