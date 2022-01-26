@@ -63,6 +63,8 @@ const api = createApi({
 });
 ```
 
+then locate the store folder in the root directory and copy the last file name created there and pass to the fetch endpoint jobId parameter
+
 # Solution
 
 ## Scenario
