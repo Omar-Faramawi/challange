@@ -22,6 +22,8 @@ GET http://localhost:3000/job/{jobId}
 
 # Solution
 
+![alt text](https://github.com/[Omar-Faramawi]/[challange]/blob/[master]/flowcharts.png?raw=true)
+
 ## People
 
 The original author [Omar Faramawi](https://github.com/Omar-Faramawi)
