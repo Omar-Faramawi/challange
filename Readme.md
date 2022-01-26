@@ -1,4 +1,4 @@
-## Installation
+# Installation
 
 Open your prefered command line tool and run the following commands:
 
@@ -22,8 +22,24 @@ GET http://localhost:3000/job/{jobId}
 
 # Solution
 
+## Scenario
+
 ![alt text](https://raw.githubusercontent.com/Omar-Faramawi/challange/master/flowcharts.png)
 
-## People
+## Sections
 
-The original author [Omar Faramawi](https://github.com/Omar-Faramawi)
+1- endpoints and controllers
+
+2- Enums
+
+3- Exceptions
+
+4- ORM
+
+5- ROUTES
+
+6- Services
+
+7- Utilities
+
+## Timereport
