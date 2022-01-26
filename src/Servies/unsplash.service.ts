@@ -1,6 +1,9 @@
 import { createApi } from "unsplash-js";
 import nodeFetch from "cross-fetch";
 
+// key written explicitly in this file for the sake of the challenge only so you don't need to create a new one
+// in real case, keys should be added in .env file and with the use of dotenv npm package we can load it for development purposes
+// and preload it for production
 const api = createApi({
   accessKey: "qRaOOxNwNsHZLgiI9IAa5AwHb5Y3sLz8hJ6GQIRSR_4",
   fetch: nodeFetch,
