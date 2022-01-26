@@ -27,3 +27,5 @@ GET http://localhost:3000/job/{jobId}
 ![alt text](https://raw.githubusercontent.com/Omar-Faramawi/challange/master/flowcharts.png)
 
 ## Timereport
+
+![alt text](https://raw.githubusercontent.com/Omar-Faramawi/challange/master/report.png)
