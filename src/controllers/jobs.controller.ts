@@ -52,7 +52,7 @@ export const createJob: RequestHandler = async (req, res, next) => {
   // Create new storage file contains Job Objet
   newJob.save();
 
-  // Delay excution by generated random number from 5 sec to 5 mins with 5 sec step
+  // Delay excution
   await Utility.delayExecution();
 
   // Fetch random image from food Category
