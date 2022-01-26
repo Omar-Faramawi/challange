@@ -19,13 +19,13 @@ Use your prefered API testing application (Insomnia, Postman,..etc) to test the 
 ### Create Job:
 
 ```
-POST http://localhost:3000/jops
+POST http://localhost:3000/jobs
 ```
 
 ### Fetch Job:
 
 ```
-GET http://localhost:3000/job/{jobId}
+GET http://localhost:3000/jobs/{jobId}
 ```
 
 ### Failed Job:
