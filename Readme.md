@@ -22,7 +22,7 @@ GET http://localhost:3000/job/{jobId}
 
 # Solution
 
-![alt text](https://github.com/[Omar-Faramawi]/[challange]/blob/[master]/flowcharts.png?raw=true)
+![alt text](https://raw.githubusercontent.com/Omar-Faramawi/challange/master/flowcharts.png)
 
 ## People
 
