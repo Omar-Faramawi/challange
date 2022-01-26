@@ -32,6 +32,10 @@ $ npm run start
 
 App will be running on http://localhost:3000
 
+### NOTE:
+
+Don't use any live watching and serving packages like (nodemon) because the application uses a Store directory as data storage inside the project root directory, so it will watch the change in the beginning of Job creation process as it adds new file to the store directory and automatically reload the app before compeleting the task.
+
 # Usage
 
 Use your prefered API testing application (Insomnia, Postman,..etc) to test the following endpoints:
@@ -50,7 +54,7 @@ GET http://localhost:3000/jobs/{jobId}
 
 ### Failed Job:
 
-In order to test Job failuer case open the (Services\unsplash.service.ts) file and replace the access key with any random string
+In order to test Job failuer case open the (Services\unsplash.service.ts) file and replace the access key with any random string then build and serve the application again
 
 ```js
 const api = createApi({
