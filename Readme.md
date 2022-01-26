@@ -54,7 +54,10 @@ GET http://localhost:3000/jobs/{jobId}
 
 ### Failed Job:
 
-In order to test Job failuer case open the (Services\unsplash.service.ts) file and replace the access key with any random string then build and serve the application again
+In order to test Job failuer case 
+
+1- open the (Services\unsplash.service.ts) file and replace the access key with any random string
+
 
 ```js
 const api = createApi({
@@ -62,8 +65,11 @@ const api = createApi({
   fetch: nodeFetch,
 });
 ```
+2- build and serve the app
 
-then locate the store folder in the root directory and copy the last file name created there and pass it to the fetch endpoint jobId parameter
+3- create job
+
+4- locate the store folder in the root directory and copy the last file name created there and pass it to the fetch endpoint jobId parameter
 
 # Solution
 
