@@ -1,6 +1,6 @@
 # Requirements
 
-Install the latest version of typescipt 4.5
+Install the latest version of Typescript 4.5
 
 ```
 npm install -g typescript
